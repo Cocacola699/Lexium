@@ -1,0 +1,19 @@
+func add x y:
+    return x + y
+
+spawn enemy
+
+enemy.hp = enemy.hp - 30
+
+func damage target:
+    target.hp = target.hp - 20
+    return target.hp
+
+say damage enemy
+say enemy.hp
+
+let v = add enemy.hp 10
+say v
+
+if v > 50:
+    say 999
